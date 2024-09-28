@@ -1,0 +1,29 @@
+[package]
+name = "softwareplaner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+serde_json = "1.0"
+argon2 = "0.4"
+jsonwebtoken = "8.1"
+env_logger = "0.10"
+log = "0.4"
+dotenv = "0.15"
+
+[dependencies.serde]
+version = "1.0"
+features = [ "derive",]
+
+[dependencies.sqlx]
+version = "0.6"
+features = [ "postgres", "runtime-tokio-native-tls", "macros",]
+
+[dependencies.yew]
+version = "0.20"
+features = [ "csr",]
+
+[dependencies.tokio]
+version = "1"
+features = [ "full",]
